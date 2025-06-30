@@ -1,0 +1,148 @@
+*{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://wallpapers.com/images/featured/football-background-8543042efgz33p6a.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;  
+
+}
+
+main{
+    width: 80vw;
+    height: 80vh;
+    background-color: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    text-align:center ;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    
+}
+section{
+    width: 100%;
+}
+
+section.populated {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    max-height: 100%;
+}
+
+.starter-text{
+    padding: 0 80px;
+
+}
+
+form{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border-top: white solid 1px;
+    padding-top: 20px;
+    border-radius: 0 0 10px 10px;
+    overflow: scroll;
+}
+
+input.question-box{
+    width: 85%;
+    padding: 10px;
+    font-size:15px ;
+    color: #383838 ;
+    border: none;
+
+}
+
+input[type=submit]{
+    width: 15% ;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: #411b8d;
+
+
+}
+
+input:focus{
+ outline: none;
+}
+
+.bubble{
+    margin: 8px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    color: #383838;
+    box-shadow: #959da533 0 8px 24px;
+    width: 80%;
+    text-align: left;
+}
+
+.bubble.user {
+    border-radius: 20px 20px 0 20px;
+    background-color: #E1F4FFFF;
+    margin-left: auto;
+}
+
+.bubble.assistant {
+    border-radius: 20px 20px 20px 0;
+    background-color: #dce7ff;
+}
+
+.prompt-suggestion-row {
+    width: 100%;
+}
+
+.prompt-suggestion-button {
+     margin: 8px;
+    padding: 8px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #383838;
+    box-shadow: #959da533 0 8px 24px;
+}
+
+
+.loader {
+  margin: 10px;
+  width: 60px;
+  aspect-ratio: 4;
+  background:
+    radial-gradient(circle closest-side, #383838 90%, #0000) 0% 50% / 20% 100% no-repeat,
+    radial-gradient(circle closest-side, #383838 90%, #0000) 50% 50% / 20% 100% no-repeat,
+    radial-gradient(circle closest-side, #383838 90%, #0000) 100% 50% / 20% 100% no-repeat;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  0%   { background-size: 20% 100%, 20% 100%, 20% 100%; }
+  33%  { background-size: 20% 0%, 20% 100%, 20% 100%; }
+  50%  { background-size: 20% 100%, 20% 0%, 20% 100%; }
+  66%  { background-size: 20% 100%, 20% 100%, 20% 0%; }
+  100% { background-size: 20% 100%, 20% 100%, 20% 100%; }
+}
+
+@media (max-width: 600px) {
+  .bubble {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
