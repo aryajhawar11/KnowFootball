@@ -43,6 +43,8 @@ section.populated {
     gap: 10px;
     padding: 10px;
     max-height: 100%;
+    scroll-behavior: smooth;
+    
 }
 
 .starter-text{
@@ -57,7 +59,7 @@ form{
     border-top: white solid 1px;
     padding-top: 20px;
     border-radius: 0 0 10px 10px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 input.question-box{
@@ -138,6 +140,9 @@ input:focus{
   50%  { background-size: 20% 100%, 20% 0%, 20% 100%; }
   66%  { background-size: 20% 100%, 20% 100%, 20% 0%; }
   100% { background-size: 20% 100%, 20% 100%, 20% 100%; }
+}
+section.populated::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
 }
 
 @media (max-width: 600px) {

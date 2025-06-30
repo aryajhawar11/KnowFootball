@@ -67,8 +67,8 @@ QUESSTION: ${latestMessage}
             messages: [template, ...messages]
         })
 
-        const stream= OpenAIStream(response)
-        return new StreamingTextResponse(stream)
+        const stream= OpenAIStream(response as any)
+        return new StreamingTextResponse(stream as any)
 
     } catch(err){
         throw err
