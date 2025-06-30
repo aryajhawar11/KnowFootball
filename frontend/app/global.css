@@ -17,7 +17,7 @@ body{
 
 main{
     width: 80vw;
-    height: 80vh;
+    height: 100vh;
     background-color: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
     border-radius: 15px;
     display: flex;
@@ -60,6 +60,7 @@ form{
     padding-top: 20px;
     border-radius: 0 0 10px 10px;
     overflow: hidden;
+    gap: 10px;
 }
 
 input.question-box{
