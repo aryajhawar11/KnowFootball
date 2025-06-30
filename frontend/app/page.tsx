@@ -40,8 +40,9 @@ const Home = () => {
                     <>
                         <p> Dive into the world of football like never before.
                             KnowFootball combines cutting-edge AI with real-time data to bring you instant answers to all your football questions — from player stats and match histories to league standings and tournament insights.
-                            Whether you're a passionate fan, a fantasy league strategist, or just curious, our intelligent assistant is here to keep you updated, informed, and ahead of the game.
+                            Whether you&#39;re a passionate fan, a fantasy league strategist, or just curious, our intelligent assistant is here to keep you updated, informed, and ahead of the game.
                             Ask anything. Get smart answers. KnowFootball.</p>
+
                         <br />
                         <PromptSuggestionRow onPromptClick={handlePrompt} />
                     </>
