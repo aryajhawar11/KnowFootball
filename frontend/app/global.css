@@ -12,6 +12,7 @@ body{
     background-image: url("https://wallpapers.com/images/featured/football-background-8543042efgz33p6a.jpg");
     background-repeat: no-repeat;
      background-size: cover;  
+     background-color: #383838;
 
 }
 
@@ -33,7 +34,31 @@ main{
 }
 section{
     width: 100%;
+
 }
+
+section p {
+  font-size: 18px; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) {
+  section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  section p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  section p {
+    font-size: 12px;
+  }
+}
+
 
 section.populated {
     flex: 1;
@@ -61,6 +86,7 @@ form{
     border-radius: 0 0 10px 10px;
     overflow: hidden;
     gap: 10px;
+    position: sticky;
 }
 
 input.question-box{
@@ -69,6 +95,10 @@ input.question-box{
     font-size:15px ;
     color: #383838 ;
     border: none;
+    bottom: 0;
+    z-index: 10;
+
+
 
 }
 
@@ -121,6 +151,20 @@ input:focus{
     border-radius: 10px;
     color: #383838;
     box-shadow: #959da533 0 8px 24px;
+}
+
+@media (max-width: 768px) {
+  .prompt-suggestion-button {
+    padding: 6px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prompt-suggestion-button {
+    padding: 4px;
+    font-size: 12px;
+  }
 }
 
 
