@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Know_Football_removebg_preview from "./assets/Know_Football_removebg_preview.png"
-import { useChat } from "ai/react"
+import { useChat } from "@ai-sdk/react"
 import { Message } from "ai"
 import Bubble from "./components/Bubble"
 import LoadingBubble from "./components/LoadingBubble"
@@ -29,7 +29,7 @@ const Home = () => {
             content: promptText,
             role: "user"
         }
-        append(msg)
+        append(msg as any)
     }
 
     return (
